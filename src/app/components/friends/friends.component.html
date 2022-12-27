@@ -1,0 +1,80 @@
+<app-header></app-header>
+<div class="position-fixed left-0 h-100 py-2 d-flex flex-column align-items-center border bg-white shadow-sm"
+    style="z-index: 10;">
+    <i class="fa-solid fa-house p-3 hovered-item text-primary" routerLink="/"></i>
+    <div class="p-3" routerLink="/profile">
+        <img src="https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png"
+            width="25px" alt="">
+    </div>
+    <hr>
+    <i class="fa-solid fa-user-group p-3 hovered-item text-primary" style="border-left: 5px solid #1B74E4;"></i>
+    <i class="fa-solid fa-store p-3 hovered-item text-primary"></i>
+    <i class="fa-solid fa-gamepad p-3 hovered-item text-primary"></i>
+</div>
+<div class="ps-5 ms-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 position-fixed h-100 card p-3">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                    <h3 class="m-0"><b>Friends</b></h3>
+                    <i class="fa-solid fa-gear" style="font-size: 24px;"></i>
+                </div>
+                
+                <div class="d-flex align-items-center p-2 my-1 active-item">
+                    <i class="fa-solid fa-user-group"></i>
+                    <h5 class="m-0 px-3">Home</h5>
+                </div>
+                <div class="d-flex align-items-center p-2 my-1 hovered-item">
+                    <i class="fa-solid fa-user-group"></i>
+                    <h5 class="m-0 px-3">Friends requests</h5>
+                    <i class="fa-solid fa-chevron-right ms-auto"></i>
+                </div>
+                <div class="d-flex align-items-center p-2 my-1 hovered-item">
+                    <i class="fa-solid fa-user-group"></i>
+                    <h5 class="m-0 px-3">Suggestions</h5>
+                    <i class="fa-solid fa-chevron-right ms-auto"></i>
+                </div>
+                <div class="d-flex align-items-center p-2 my-1 hovered-item">
+                    <i class="fa-solid fa-user-group"></i>
+                    <h5 class="m-0 px-3">All friends</h5>
+                    <i class="fa-solid fa-chevron-right ms-auto"></i>
+                </div>
+                <div class="d-flex align-items-center p-2 my-1 hovered-item">
+                    <i class="fa-solid fa-user-group"></i>
+                    <h5 class="m-0 px-3">Birthdays</h5>
+                    <i class="fa-solid fa-chevron-right ms-auto"></i>
+                </div>
+                <div class="d-flex align-items-center p-2 my-1 hovered-item">
+                    <i class="fa-solid fa-user-group"></i>
+                    <h5 class="m-0 px-3">Custom Lists</h5>
+                    <i class="fa-solid fa-chevron-right ms-auto"></i>
+                </div>
+            </div>
+            <div class="col-md-9 offset-md-3 py-3 px-5">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                    <h4><b>Friend Requests</b></h4>
+                    <h6 class="text-primary">See all</h6>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3" *ngFor="let item of friendlist">
+                            <div class="card my-1">
+                                <img [src]="item.image" width="100%" height="240px" alt="">
+                                <div class="p-3 border shadow-sm">
+                                    <h5 class="m-0">{{item.name}}</h5>
+                                    <div class="mb-1">
+                                        <img src="/assets/images/story/image (1).jfif" width="20px" height="20px" class="rounded-circle" alt="">
+                                        <img src="/assets/images/story/image (2).jfif" width="20px" height="20px" class="rounded-circle" alt="">
+                                        <span class="px-2">7 mutual friends</span>
+                                    </div>
+                                    <button class="btn btn-primary w-100 my-1">Confirm</button>
+                                    <button class="btn btn-light shadow-sm w-100 my-1">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
