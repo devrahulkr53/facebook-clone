@@ -1,6 +1,8 @@
-# FacebookClone
+# FacebookClone [ Angular ]
 
+Project Url: https://facebook-clone-f0f35c.netlify.app/ \
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
+![WhatsApp Image 2022-12-28 at 9 43 08 AM](https://user-images.githubusercontent.com/58592540/209756266-b12c34e8-625f-4941-9b2e-e0910e528b23.jpeg)
 
 ## Development server
 
